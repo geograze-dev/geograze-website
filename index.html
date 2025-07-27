@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GeoGraze – Satellite Livestock Tracking</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      background: #f7fafc;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #2e8b57 60%, #1e3c72 100%);
+      color: #fff;
+      padding: 2rem 0 1.5rem 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin: 0;
+      opacity: 0.9;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+      padding: 1.5rem 1.2rem;
+      max-width: 320px;
+      flex: 1 1 280px;
+      transition: box-shadow 0.2s;
+    }
+    .feature-card:hover {
+      box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
+    }
+    .feature-card h3 {
+      margin-top: 0;
+      color: #2e8b57;
+      font-size: 1.2rem;
+      margin-bottom: 0.7rem;
+    }
+    .feature-card ul {
+      padding-left: 1.2em;
+      margin: 0;
+      font-size: 1rem;
+    }
+    .map-preview {
+      background: #e3eaf2;
+      border-radius: 12px;
+      margin: 2rem auto;
+      max-width: 600px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .map-preview img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    }
+    .cta {
+      text-align: center;
+      margin: 2.5rem 0 1.5rem 0;
+    }
+    .cta a {
+      background: #2e8b57;
+      color: #fff;
+      padding: 0.9rem 2.2rem;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+      transition: background 0.2s;
+    }
+    .cta a:hover {
+      background: #1e3c72;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.95rem;
+      padding: 1.2rem 0;
+      background: #f0f4f8;
+      margin-top: 2rem;
+    }
+    @media (max-width: 900px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      .feature-card {
+        max-width: 95vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GeoGraze</h1>
+    <p>Satellite-connected livestock tracking for remote, off-grid environments</p>
+  </header>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>Reliable Location & Motion Tracking</h3>
+      <ul>
+        <li>GNSS accuracy ≤ 3 meters</li>
+        <li>Motion-triggered GPS updates</li>
+        <li>Ultra-low power operation</li>
+      </ul>
+    </div>
+    <div class="feature-card">
+      <h3>Satellite Data Connectivity</h3>
+      <ul>
+        <li>Myriota LEO satellite network</li>
+        <li>Compact payloads: Device ID, timestamp, location, motion</li>
+        <li>Transmission every 1–6 hours</li>
+      </ul>
+    </div>
+    <div class="feature-card">
+      <h3>Rugged & Autonomous Hardware</h3>
+      <ul>
+        <li>Solar-powered, 7+ days runtime</li>
+        <li>Weatherproof (IP67), lightweight</li>
+        <li>Collar-mount for livestock</li>
+      </ul>
+    </div>
+    <div class="feature-card">
+      <h3>Intuitive Web Dashboard</h3>
+      <ul>
+        <li>Device overview & status</li>
+        <li>Live map of livestock locations</li>
+        <li>Data logs & error alerts</li>
+        <li>Mobile-friendly design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="map-preview">
+    <h2>See Your Herd, Anywhere</h2>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Livestock Map Preview">
+    <p style="margin-top:1rem; color:#2e8b57;">Interactive map view for real-time tracking and data insights.</p>
+  </section>
+
+  <div class="cta">
+    <a href="#contact">Get Early Access</a>
+  </div>
+
+  <footer>
+    &copy; 2025 GeoGraze. All rights reserved. | Built for the future of remote agriculture.
+  </footer>
+</body>
+</html>
